@@ -61,6 +61,15 @@ jobs:
           git add data
           git diff --cached --quiet || (git commit -m "Update schedule" && git push)
 
+      - name: Save rejected images for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: review
+          path: review/
+          retention-days: 3
+          if-no-files-found: ignore
+
       - name: Notify in Telegram on failure
         if: failure() && steps.parse.outcome == 'failure'
         env:
