@@ -51,13 +51,13 @@
   "5669#0",
   "5670#0",
   "5671#0",
-  "5672#0"
+  "5672#0",
+  "5673#0"
  ],
  "net_error": false,
- "parse_error_date": "2026-11-07",
+ "parse_error_date": "2026-11-08",
  "backup_dates": [
-  "2026-11-07",
   "2026-11-08"
  ],
- "notified": "2026-11-07|backup"
+ "notified": "2026-11-08|backup"
 }
